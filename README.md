@@ -1,8 +1,10 @@
-ng-detector
+react-detector
 ===========
 
-Chrome extension that detects [AngularJS](https://angularjs.org) apps as you browse.
+Chrome extension that detects [ReactJS](http://facebook.github.io/react/) apps as you browse.
 
-Adds a small AngularJS icon into the address bar when you come across a page that is built using AngularJS.
+Adds a small ReactJS icon into the address bar when you come across a page that is built using ReactJS.
 
-![ng-detector screenshot](/images/ng-detector-screenshot.png?raw=true)
+![react-detector screenshot](/images/react-detector-screenshot.png?raw=true)
+
+This is a fork from [ng-detector](https://github.com/IgorMinar/ng-detector) with very few changes.

@@ -1,9 +1,9 @@
-console.log('ng-detector background script started!');
+console.log('react-detector background script started!');
 
 chrome.runtime.onMessage.addListener(
   function(request, sender, sendResponse) {
-    if (request.angular) {
+    if (request.react) {
       chrome.pageAction.show(sender.tab.id);
-      console.log('Angular found at:', sender.tab.url);
+      console.log('ReactJS found at:', sender.tab.url);
     }
   });
