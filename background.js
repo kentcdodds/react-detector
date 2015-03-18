@@ -7,3 +7,7 @@ chrome.runtime.onMessage.addListener(
       console.log('ReactJS found at:', sender.tab.url);
     }
   });
+
+chrome.pageAction.onClicked.addListener(function(tab) {
+  chrome.tabs.sendMessage(tab.id, {toggleOutlines: true});
+});
