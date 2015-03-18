@@ -9,4 +9,22 @@ function checkForReact() {
   }
 }
 
+var outlinesVisible = false;
+var outlinesStyleNode = null;
+chrome.runtime.onMessage.addListener(
+  function(request, sender, sendResponse) {
+    if (request.toggleOutlines) {
+      if (outlinesVisible) {
+        outlinesStyleNode.remove();
+        outlinesStyleNode = null;
+      } else {
+        outlinesStyleNode = document.createElement('style');
+        outlinesStyleNode.textContent =
+          '[data-reactid] {outline: solid 1px rgba(97, 218, 251, 0.4)}';
+        document.head.appendChild(outlinesStyleNode);
+      }
+      outlinesVisible = !outlinesVisible;
+    }
+  });
+
 checkForReact();
