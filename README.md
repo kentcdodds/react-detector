@@ -7,4 +7,11 @@ Adds a small ReactJS icon into the address bar when you come across a page that 
 
 ![react-detector screenshot](/images/react-detector-screenshot.png?raw=true)
 
+You can also click on the icon to outline the react components on the page:
+
+![react-detector outline screenshot](/images/outlines.png?raw=true)
+
+If you're interested in a version for Firefox, you may want to check out [this
+one](https://github.com/cymen/show-me-the-react)
+
 This is a fork from [ng-detector](https://github.com/IgorMinar/ng-detector) with very few changes.
