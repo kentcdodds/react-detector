@@ -1,5 +1,7 @@
+var selector = '[data-reactroot], [data-reactid]';
+
 function checkForReact() {
-  var runningReact = !!document.querySelector('[data-reactid]');
+  var runningReact = !!document.querySelector(selector);
   if (runningReact) {
     chrome.runtime.sendMessage({react: true});
   } else {
@@ -20,7 +22,7 @@ chrome.runtime.onMessage.addListener(
       } else {
         outlinesStyleNode = document.createElement('style');
         outlinesStyleNode.textContent =
-          '[data-reactid] {outline: solid 1px rgba(97, 218, 251, 0.4)}';
+          selector + ' {outline: solid 1px rgba(97, 218, 251, 0.4)}';
         document.head.appendChild(outlinesStyleNode);
       }
       outlinesVisible = !outlinesVisible;
