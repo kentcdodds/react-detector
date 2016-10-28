@@ -15,3 +15,9 @@ If you're interested in a version for Firefox, you may want to check out [this
 one](https://github.com/cymen/show-me-the-react)
 
 This is a fork from [ng-detector](https://github.com/IgorMinar/ng-detector) with very few changes.
+
+# FAQ:
+
+> Why is it not showing up for some apps anymore?
+
+Because of [this](https://github.com/kentcdodds/react-detector/issues/7#issuecomment-156707194). :-(
