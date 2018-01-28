@@ -1,3 +1,5 @@
+DEPRECATED. [The official React DevTools](https://github.com/facebook/react-devtools) can do eveything this extension can do and more. Please install that instead.
+
 react-detector
 ===========
 
